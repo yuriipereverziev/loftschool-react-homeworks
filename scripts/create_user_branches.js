@@ -10,46 +10,14 @@ const execPromise = command =>
   });
 
 const students = [
-  'dmitrymarokhonov',
-  'reyzele',
-  'dapetrov0',
-  'rchesnokov',
-  'makhataibar',
-  'sen4az',
-  'YanaShingel',
-  'mihailKuzmintsev',
-  'AlekseyVasilenko',
-  'aftaboy',
-  'b-gulnur-r',
-  'Dmitriy-8-Kireev',
-  'Drillibit',
-  'KustovAA',
-  'bu-ra-to',
-  'erven1985',
-  'Vostenzuk',
-  'OlBol',
-  'golah30',
-  'necrolyss',
-  'flightik',
-  'NikitaSmithTheOne',
-  'IvanOpanasiuk',
-  'notherkappa',
-  'maxim1989',
-  'Ivan3008',
-  'IrinaKondrateva',
-  'dkrasheninnikov',
-  'AntonLantukh',
-  'anton-yakovlev',
-  'eugenedan',
-  'evgeniyandrusenko',
-  'aelsergeev'
+  'yuriipereverziev',
 ];
 
 async function main() {
   for (let student of students) {
     await createHomeworkBranch(8, student);
   }
-  await execPromise('git checkout june_master');
+  await execPromise('git checkout main');
 }
 
 async function createHomeworkBranch(homeworkNumber, student) {
