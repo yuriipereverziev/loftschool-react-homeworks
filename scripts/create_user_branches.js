@@ -17,7 +17,7 @@ async function main() {
   for (let student of students) {
     await createHomeworkBranch(8, student);
   }
-  await execPromise('git checkout june_master');
+  await execPromise('git checkout main');
 }
 
 async function createHomeworkBranch(homeworkNumber, student) {
